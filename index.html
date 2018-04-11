@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
@@ -17,30 +18,41 @@
                 <p>Register Form</p>
         </div>
             <form id="registerForm" class="form-content">
-                <div class="form-content--input">
-                    <label for="registerForm_Ussername" class="hide" >Username </label>
-                    <input name="registerForm_Ussername" type="text" >
+                <div class="form-content--inputlabel">
+                    <label for="registerForm_Username" class="hide" >Username </label>
+                    <input name="registerForm_Username" type="text" class="form-content--inputlabel__input" 
+                    placeholder="Username" required >
                 </div>
-                <div class="form-content--input">
+                <div class="form-content--inputlabel">
                     <label for="registerForm_Password" class="hide">Password </label>
-                    <input name="registerForm_Password" type="text" >
+                    <input name="registerForm_Password" type="password" class="form-content--inputlabel__input"
+                    placeholder="Password" required>
                 </div>
-                <div class="form-content--input">
+                <div class="form-content--inputlabel">
                     <label for="registerForm_ConfirmPassword" class="hide">Confirm Password</label>
-                    <input name="registerForm_ConfirmPassword" type="text">
+                    <input name="registerForm_ConfirmPassword" type="password"class="form-content--inputlabel__input"
+                    placeholder="Repeat Password" required>
                 </div>
-                <div class="form-content--input">
+                <div class="form-content--inputlabel">
                     <label for="registerForm_Email" class="hide">Email </label>
-                    <input name="registerForm_Email" type="text" >
+                    <input name="registerForm_Email" type="email" class="form-content--inputlabel__input"
+                    placeholder="Email" required>
                 </div>
-                <label for="RecoveryForm_Location" class="hide">Your Location </label>
-                <select name="RecoveryForm_Location" >
-                    <option value="null">--Wybierz Swoja lokalizacje--</option>
-                    <option value="1">Przemkowo</option>
-                    <option value="2">Hubertowo</option>
-                    <option value="3">906</option>
-                </select>
-                <label><input name="registerForm_CheckBox" type="checkbox" > I have read and accept the terms of use</label>
+                <div class="form-content--inputlabel">
+                    <label for="RecoveryForm_Location" class="hide">Your Location </label>
+                    <select name="RecoveryForm_Location" class="form-content--inputlabel__select" required>
+                        <option value="">Your Localization</option>
+                        <option value="1">Przemkowo</option>
+                        <option value="2">Hubertowo</option>
+                        <option value="3">906</option>
+                    </select>
+                </div>
+                <div class="form-content--checkboxlabel">
+                    <label for="registerForm_CheckBox" class="form-content--checkboxlabel__label">
+                        <input name="registerForm_CheckBox" type="checkbox" class="form-content--checkboxlabel__checkbox" > I have read and accept the terms of use
+                    </label>
+                    
+                </div>
                 <input type="submit">
             </form>
     </div>
