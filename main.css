@@ -1,5 +1,5 @@
 body{
-    background: url(img/background.png);
+    background: url(img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Titillium Web', sans-serif;
@@ -73,7 +73,7 @@ h1{
 .form-content--inputlabel__select{
     border-style: none;
     background: rgba(255,255,255,0.1);
-    padding: 10px 55px 4px 60px;
+    padding: 5px 59px 7px 60px;
     border-radius: 3px;
     color: #afafaf;
 }
@@ -86,7 +86,6 @@ h1{
 {
     border: 1px solid green; 
 }
-
 
 ::-webkit-input-placeholder { font-family: 'Titillium Web', sans-serif; color: #afafaf; font-size: 1.0rem; line-height: 1.2rem; font-weight: 300;}
 ::-moz-placeholder { font-family: 'Titillium Web', sans-serif; color: #afafaf; font-size: 1.0rem; line-height: 1.2rem; font-weight: 300; }
@@ -102,20 +101,20 @@ h1{
     background: #e0e0e0;
     top: 3px;
 }
-.form-content--inputlabel:nth-child(1){
+.icon--person{
     background: url(img/icon_input_set.svg) 15px 4px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
     margin-top: 0;
 }
-.form-content--inputlabel:nth-child(2){
+.icon--password{
     background: url(img/icon_input_set.svg) 15px -33px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
 }
-.form-content--inputlabel:nth-child(3){
-    background: url(img/icon_input_set.svg) 15px -32px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
-}
-.form-content--inputlabel:nth-child(4){
+.icon--email{
     background: url(img/icon_input_set.svg) 15px -67px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
 }
-.form-content--inputlabel:nth-child(5){
+.icon--localization{
+    background: url(img/icon_input_set.svg) 15px -100px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
+}
+.icon--phone{
     background: url(img/icon_input_set.svg) 15px -100px no-repeat,linear-gradient(#F8F8F8, #EFEFEF);
 }
 .form-content--checkboxlabel{
@@ -125,15 +124,46 @@ h1{
     min-width: 10%;
     height: 40px;
     box-sizing: border-box;
+    cursor: pointer;
+}
+.form-content--checkboxlabel__label{
+    cursor: pointer;
+    color: #afafaf;
+    position: relative;
+    top: 5px;
 }
 .form-content--checkboxlabel__checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
+    position: relative;
     width: 22px;
     height: 22px;
     margin: 3px;
     padding: 1px;
     border: 1px solid #c6c6c6;
     border-radius: 3px;
-    display: inline-block;
+    cursor: pointer;
+    float: left;
+}
+.form-content--checkboxlabel__checkbox:checked::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    background-color: #93d02b;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+.form-content--button{
+    border-radius: 3px;
+    background: #93d02b;
+    border: #74a322;
+    height: 30px;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75)
+}
+.form-content--button:hover{
+    background: #61881d
 }
