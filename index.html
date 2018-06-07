@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet"> -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="main.js"></script>
 </head>
 <body>
-    <main>
-    <header><h1>Masteralb creative</h1></header>
-    <div class="column">
-        <div class="box">
-                <p>Register Form</p>
-        </div>
-            <form id="registerForm" class="form-content">
-                <div class="form-content--inputlabel">
-                    <label for="registerForm_Username" class="hide" >Username </label>
-                    <input name="registerForm_Username" type="text" class="form-content--inputlabel__input" 
-                    placeholder="Username" required >
-                </div>
-                <div class="form-content--inputlabel">
-                    <label for="registerForm_Password" class="hide">Password </label>
-                    <input name="registerForm_Password" type="password" class="form-content--inputlabel__input"
-                    placeholder="Password" required>
-                </div>
-                <div class="form-content--inputlabel">
-                    <label for="registerForm_ConfirmPassword" class="hide">Confirm Password</label>
-                    <input name="registerForm_ConfirmPassword" type="password"class="form-content--inputlabel__input"
-                    placeholder="Repeat Password" required>
-                </div>
-                <div class="form-content--inputlabel">
-                    <label for="registerForm_Email" class="hide">Email </label>
-                    <input name="registerForm_Email" type="email" class="form-content--inputlabel__input"
-                    placeholder="Email" required>
-                </div>
-                <div class="form-content--inputlabel">
-                    <label for="RecoveryForm_Location" class="hide">Your Location </label>
-                    <select name="RecoveryForm_Location" class="form-content--inputlabel__select" required>
-                        <option value="">Your Localization</option>
-                        <option value="1">Przemkowo</option>
-                        <option value="2">Hubertowo</option>
-                        <option value="3">906</option>
-                    </select>
-                </div>
-                <div class="form-content--checkboxlabel">
-                    <label for="registerForm_CheckBox" class="form-content--checkboxlabel__label">
-                        <input name="registerForm_CheckBox" type="checkbox" class="form-content--checkboxlabel__checkbox" > I have read and accept the terms of use
-                    </label>
-                    
-                </div>
-                <input type="submit">
-            </form>
-    </div>
-    <!-- <form id="sendEmail">
-        <p>Send Email</p>
-        <label >Your Name<input type="text"></input> </label>
-        <label >Your Email<input type="text"></input> </label>
-        <label >Message<textarea></textarea> </label>
-        <input type="checkbox" >Send a copy to my Email</input>
-        <input type="submit">
-    </form>
-    <form id="SingInForm">
-        <p>Sign in Form</p>
-        <label >Username<input type="text"></input> </label>
-        <label >Password<input type="text"></input> </label>
-        <input type="checkbox" >Remember me</input>
-        <input type="submit">
-    </form>
-    <form id="RecoveryForm">
-        <p>Recovery Form</p>
-        <label >Enter your Email<input type="text"></input> </label>
-        <label >Enter your Phone numer<input type="text"></input> </label>
-        <input type="checkbox" >Send a copy to my Email</input>
-        <input type="submit">
-        <butt>Done</butt>
-    </form>
-    <form id="SubscribeForm">
-        <p>Subscribe Forml</p>
-        <label >Enter yout Email<input type="text"></input> </label>
-        <input type="checkbox" >Send a copy to my Email</input>
-        <input type="submit" >
-        <button>No, Thanks</button>
-    </form> -->
+	<main>
+	<header><h1>Masteralb creative</h1></header>
+	<div class="column">
+		<div class="box-header">
+			<p>Register Form</p>
+		</div>
+		<form id="registerForm" class="form-content">
+			<div class="form-content__row ">
+				<label for="registerForm_Username" class=" hide" >Username </label>
+				<input name="registerForm_Username" type="text" class="form-content__input" 
+					placeholder="Username" required >
+				<div class="form-content__icon"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="registerForm_Password" class="hide">Password </label>
+				<input name="registerForm_Password" type="password" class="form-content__input"
+					placeholder="Password" required>
+					<div class="form-content__icon form-content__icon--password"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="registerForm_ConfirmPassword" class="hide">Confirm Password</label>
+				<input name="registerForm_ConfirmPassword" type="password"class="form-content__input"
+					placeholder="Repeat Password" required>
+					<div class="form-content__icon form-content__icon--password"></div>
+			</div>	
+			<div class="form-content__row">
+				<label for="registerForm_Email" class="hide">Email </label>
+				<input name="registerForm_Email" type="email" class="form-content__input"
+					placeholder="Email" required>
+					<div class="form-content__icon form-content__icon--email"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="RecoveryForm_Location" class="hide">Your Location </label>
+				<select name="RecoveryForm_Location" class="form-content__select" required>
+					<option value="">Your Localization</option>
+					<option value="1">Przemkowo</option>
+					<option value="2">Hubertowo</option>
+					<option value="3">906</option>
+				</select>
+				<div class="form-content__icon form-content__icon--localization"></div>
+			</div>
+			<div class="form-content__checkboxlabel">
+				<label for="registerForm_CheckBox" class="form-content__label">
+					<input id="registerForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="" required> I have read and accept the terms of use
+				</label>
+			</div>
+				<button>Sing Up</button>
+		</form>
+			<div class="box-header">
+				<p>Send Email</p>
+			</div>
+		<form id="sendEmailform" class="form-content">
+			<div class="form-content__row">
+				<label for="sendEmailform_Username" class=" hide" >Your Name</label>
+				<input name="sendEmailform_Username" type="text" class="form-content__input" 
+					placeholder="Your Name" required >
+				<div class="form-content__icon"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="sendEmailform_Password" class="hide">Email </label>
+				<input name="sendEmailform_Password" type="email" class="form-content__input"
+					placeholder="Email" required>
+				<div class="form-content__icon form-content__icon--email"></div>
+			</div>
+			<div class="form-content__row">
+				<label for="registerForm_Password" class="hide">Password </label>
+				<textarea></textarea>
+			</div>
+			<div class="form-content__checkboxlabel">
+				<label for="registerForm_CheckBox" class="form-content__label">
+					<input id="registerForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="" required> I have read and accept the terms of use
+				</label>
+			</div>
+			<button>Sing Up</button>
+		</form>
+	</div>
+		<!--
+		<form id="SingInForm">
+				<p>Sign in Form</p>
+				<label >Username<input type="text"></input> </label>
+				<label >Password<input type="text"></input> </label>
+				<input type="checkbox" >Remember me</input>
+				<input type="submit">
+		</form>
+		<form id="RecoveryForm">
+				<p>Recovery Form</p>
+				<label >Enter your Email<input type="text"></input> </label>
+				<label >Enter your Phone numer<input type="text"></input> </label>
+				<input type="checkbox" >Send a copy to my Email</input>
+				<input type="submit">
+				<butt>Done</butt>
+		</form>
+		<form id="SubscribeForm">
+				<p>Subscribe Forml</p>
+				<label >Enter yout Email<input type="text"></input> </label>
+				<input type="checkbox" >Send a copy to my Email</input>
+				<input type="submit" >
+				<button>No, Thanks</button>
+		</form> -->
 </main>
 </body>
 </html>
