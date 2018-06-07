@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(img/background.png);
+    background: url(img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Titillium Web', sans-serif;
@@ -102,7 +102,6 @@ h1{
     border: 1px solid green; 
 }
 
-
 ::-webkit-input-placeholder { font-family: 'Titillium Web', sans-serif; color: #afafaf; font-size: 1.0rem; line-height: 1.2rem; font-weight: 300;}
 ::-moz-placeholder { font-family: 'Titillium Web', sans-serif; color: #afafaf; font-size: 1.0rem; line-height: 1.2rem; font-weight: 300; }
 :-ms-input-placeholder { font-family: 'Titillium Web', sans-serif; color: #afafaf; font-size: 1.0rem; line-height: 1.2rem; font-weight: 300; }
@@ -137,6 +136,7 @@ h1{
 .form-content__checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
+    position: relative;
     width: 22px;
     height: 22px;
     margin: 3px;
