@@ -5,13 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	<script src="main.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
 	<main>
 	<header><h1>Masteralb creative</h1></header>
 	<div class="column">
@@ -54,11 +53,12 @@
 				<div class="form-content__icon form-content__icon--localization"></div>
 			</div>
 			<div class="form-content__checkboxlabel">
+				<input id="registerForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="form-content__checkbox" required>
 				<label for="registerForm_CheckBox" class="form-content__label">
-					<input id="registerForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="" required> I have read and accept the terms of use
+					I have read and accept the terms of use
 				</label>
 			</div>
-				<button>Sing Up</button>
+				<button class="btn">Sing Up</button>
 		</form>
 			<div class="box-header">
 				<p>Send Email</p>
@@ -76,16 +76,34 @@
 					placeholder="Email" required>
 				<div class="form-content__icon form-content__icon--email"></div>
 			</div>
-			<div class="form-content__row">
-				<label for="registerForm_Password" class="hide">Password </label>
-				<textarea></textarea>
-			</div>
+				<label for="registerForm_Password" class="hide">Your message </label>
+				<textarea class="form-content__text-area " placeholder="Your message"></textarea>
 			<div class="form-content__checkboxlabel">
-				<label for="registerForm_CheckBox" class="form-content__label">
-					<input id="registerForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="" required> I have read and accept the terms of use
+				<input id="sendEmailForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="form-content__checkbox" required>
+				<label for="sendEmailForm_CheckBox" class="form-content__label">
+					Send a copy to my email
 				</label>
 			</div>
-			<button>Sing Up</button>
+			<button class="btn">Sing Up</button>
+		</form>
+	</div>
+	<div class="column">
+		<div class="box-header">
+			<p>Sing In Form</p>
+		</div>
+		<form id="SingInForm" class="form-content">
+			<div class="form-content__row">
+				<label for="SingInForm_Username" class=" hide" >Your Name</label>
+				<input name="SingInForm_Username" type="text" class="form-content__input" 
+					placeholder="Your Name" required >
+				<div class="form-content__icon"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="SingInForm_Password" class="hide">Email </label>
+				<input name="SingInForm_Password" type="email" class="form-content__input"
+					placeholder="Email" required>
+				<div class="form-content__icon form-content__icon--email"></div>
+			</div>
 		</form>
 	</div>
 		<!--
@@ -111,98 +129,6 @@
 				<input type="submit" >
 				<button>No, Thanks</button>
 		</form> -->
-=======
-  <main>
-  <header><h1>Masteralb creative</h1></header>
-  <div class="column">
-    <div class="box">
-      <p>Register Form</p>
-  </div>
-    <form id="registerForm" class="form-content">
-      <div class="form-content--inputlabel icon--person">
-        <label for="registerForm_Username" class="hide" >Username </label>
-        <input id="registerForm_Username" type="text" class="form-content--inputlabel__input" 
-          placeholder="Username" required >
-      </div>
-      <div class="form-content--inputlabel icon--password">
-        <label for="registerForm_Password" class="hide">Password </label>
-        <input id="registerForm_Password" type="password" class="form-content--inputlabel__input"
-          placeholder="Password" required>
-      </div>
-      <div class="form-content--inputlabel icon--password">
-        <label for="registerForm_ConfirmPassword" class="hide">Confirm Password</label>
-        <input id="registerForm_ConfirmPassword" type="password"class="form-content--inputlabel__input"
-          placeholder="Repeat Password" required>
-      </div>
-      <div class="form-content--inputlabel icon--email">
-        <label for="registerForm_Email" class="hide">Email </label>
-        <input id="registerForm_Email" type="email" class="form-content--inputlabel__input"
-          placeholder="Email" required>
-      </div>
-      <div class="form-content--inputlabel icon--localization">
-        <label for="registerForm_Location" class="hide">Your Location </label>
-        <select id="registerForm_Location" class="form-content--inputlabel__select" required>
-          <option value="">Your Localization</option>
-          <option value="1">Przemkowo</option>
-          <option value="2">Hubertowo</option>
-          <option value="3">906</option>
-        </select>
-      </div>
-      <div class="form-content--checkboxlabel">
-        <label for="registerForm_CheckBox" class="form-content--checkboxlabel__label">
-          <input id="registerForm_CheckBox" type="checkbox" class="form-content--checkboxlabel__checkbox" > I have read and accept the terms of use
-        </label>         
-      </div>
-        <button class="form-content--button" >Sing Up</button>
-    </form>
-        <!-- <div class="box">
-                <p>Send Email</p>
-        </div>
-        <form id="sendEmailForm" class="form-content ">
-            <div class="form-content--inputlabel icon--person">
-                <label for="sendEmailForm_Username" class="hide">Your Name </label>
-                <input id="sendEmailForm_Username" type="text" class="form-content--inputlabel__input">
-            </div>
-            <div class="form-content--inputlabel icon--email">
-                <label for="sendEmailForm_Email" class="hide">Your Email </label>
-                <input id="sendEmailForm_Email" type="text" class="form-content--inputlabel__input">
-            </div>
-            <div class="form-content--inputlabel">
-                <label id="sendEmailForm_Message" class="hide">Message </label>
-                <textarea id="sendEmailForm_Message"></textarea>
-            </div>
-            <div class="form-content--checkboxlabel">
-                <label for="sendEmailForm_CheckBox" class="form-content--checkboxlabel__label">
-                <input id="sendEmailForm_CheckBox" type="checkbox" class="form-content--checkboxlabel__checkbox">Send a copy to my Email
-                </label>
-            </div>
-            <input type="submit" class="form-content--button">
-        </form>
-    </div> -->
-    <!--
-    <form id="SingInForm">
-        <p>Sign in Form</p>
-        <label >Username<input type="text"></input> </label>
-        <label >Password<input type="text"></input> </label>
-        <input type="checkbox" >Remember me</input>
-        <input type="submit">
-    </form>
-    <form id="RecoveryForm">
-        <p>Recovery Form</p>
-        <label >Enter your Email<input type="text"></input> </label>
-        <label >Enter your Phone numer<input type="text"></input> </label>
-        <input type="checkbox" >Send a copy to my Email</input>
-        <input type="submit">
-        <butt>Done</butt>
-    </form>
-    <form id="SubscribeForm">
-        <p>Subscribe Forml</p>
-        <label >Enter yout Email<input type="text"></input> </label>
-        <input type="checkbox" >Send a copy to my Email</input>
-        <input type="submit" >
-        <button>No, Thanks</button>
-    </form> -->
->>>>>>> 190741e94e138e866c32e5e4899383aea709b931
 </main>
 </body>
 </html>
