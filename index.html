@@ -71,15 +71,15 @@
 				<div class="form-content__icon"></div>
 			</div>
 			<div class="form-content__row ">
-				<label for="sendEmailform_Password" class="hide">Email </label>
-				<input name="sendEmailform_Password" type="email" class="form-content__input"
+				<label for="sendEmailform_Email" class="hide">Email </label>
+				<input name="sendEmailform_Email" type="email" class="form-content__input"
 					placeholder="Email" required>
 				<div class="form-content__icon form-content__icon--email"></div>
 			</div>
-				<label for="registerForm_Password" class="hide">Your message </label>
-				<textarea class="form-content__text-area " placeholder="Your message"></textarea>
+				<label for="registerForm_your-message" class="hide">Your message </label>
+				<textarea id="registerForm_your-message" class="form-content__text-area" placeholder="Your message"></textarea>
 			<div class="form-content__checkboxlabel">
-				<input id="sendEmailForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="form-content__checkbox" required>
+				<input id="sendEmailForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="form-content__checkbox">
 				<label for="sendEmailForm_CheckBox" class="form-content__label">
 					Send a copy to my email
 				</label>
@@ -104,31 +104,54 @@
 					placeholder="Email" required>
 				<div class="form-content__icon form-content__icon--email"></div>
 			</div>
+			<div class="form-content__checkboxlabel">
+				<input id="SingInForm_CheckBox" name="registerForm_CheckBox" type="checkbox" class="form-content__checkbox">
+				<label for="SingInForm_CheckBox" class="form-content__label">
+					Remember Me
+				</label>
+				<button class="btn btn--side-button btn--self-confidence">Sing In</button>
+			</div>
 		</form>
+		<div class="box-header">
+			<p>Recovery Form</p>
+		</div>
+		<form id="RecoveryForm" class="form-content">
+			<div class="form-content__row ">
+				<label for="SingInForm_Password" class="hide">Email </label>
+				<input name="SingInForm_Password" type="email" class="form-content__input"
+					placeholder="Email" required>
+				<div class="form-content__icon form-content__icon--email"></div>
+			</div>
+			<div class="form-content__row ">
+				<label for="SingInForm_Password" class="hide">Phone </label>
+				<input name="SingInForm_Password" type="phone" class="form-content__input"
+					placeholder="Enter your Phone number" required>
+				<div class="form-content__icon form-content__icon--phone"></div>
+			</div>
+			<div class="form-content__one-row">
+				<button class="btn btn--side-button">Send</button>
+				<button class="btn btn--side-button" disabled>Done</button>
+			</div>
+		</form> 
+		<div class="box-header">
+			<p>Subscribe Form</p>
+		</div>
+		<form id="SubscribeForm" class="form-content">
+			<div class="form-content__row ">
+				<label for="SubscribeForm_Password" class="hide">Email </label>
+				<input name="SubscribeForm_Password" type="Email" class="form-content__input"
+					placeholder="Enter your Email" required>
+				<div class="form-content__icon form-content__icon--email"></div>
+			</div>
+			<div class="form-content__one-row">
+				<button type="submit" class="btn btn--side-button">Subscribe</button>
+				<button type="reset" class="btn btn--side-button btn--remove" >No, Thanks</button>
+			</div>
+		</form>
+		<div class="footer-container">
+			<img class="footer-container__bottom-Logo" src="img/BottomLogo.png" alt="Logo Firmy">
+		</div>
 	</div>
-		<!--
-		<form id="SingInForm">
-				<p>Sign in Form</p>
-				<label >Username<input type="text"></input> </label>
-				<label >Password<input type="text"></input> </label>
-				<input type="checkbox" >Remember me</input>
-				<input type="submit">
-		</form>
-		<form id="RecoveryForm">
-				<p>Recovery Form</p>
-				<label >Enter your Email<input type="text"></input> </label>
-				<label >Enter your Phone numer<input type="text"></input> </label>
-				<input type="checkbox" >Send a copy to my Email</input>
-				<input type="submit">
-				<butt>Done</butt>
-		</form>
-		<form id="SubscribeForm">
-				<p>Subscribe Forml</p>
-				<label >Enter yout Email<input type="text"></input> </label>
-				<input type="checkbox" >Send a copy to my Email</input>
-				<input type="submit" >
-				<button>No, Thanks</button>
-		</form> -->
 </main>
 </body>
 </html>

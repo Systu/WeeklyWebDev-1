@@ -43,14 +43,16 @@ p{
     margin: 1.5% 58px 58px;
 }
 .box-header{
-    margin-bottom: 20px;
+    margin: 45px 0;
     font-size: 1.9rem;
     text-align: center;
     font-weight: 400;
     color: #f7fcff;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75)
 }
-
+.box-header:nth-child(1){
+    margin-top: 0;
+}
 .form-content{
     display: flex;
     flex-direction: column;
@@ -68,8 +70,7 @@ p{
     width: 95%;
     min-width: 10%;
     height: 40px;
-    border-radius: 3px;
-          
+    border-radius: 3px;    
 }
 .form-content__row::before{
     content: "";
@@ -89,6 +90,10 @@ p{
     border: 1px solid #c6c6c6;    
     color: #afafaf;
     width: 100%;
+}
+.form-content__select{
+    height: 40px;
+    padding-top: 8px;
 }
 .form-content__input:focus{
     border: 1px solid green;
@@ -110,39 +115,42 @@ p{
     height: 100%;
     width: 55px;
     top:-100%;
-    background: url(img/icon_input_set.svg) 15px 4px no-repeat;
+    background: url(img/icon_input_set.svg) 17px 4px no-repeat;
 }
 .form-content__icon--person{
     margin-top: 0;
 }
 .form-content__icon--password{
-    background-position:  15px -33px;
+    background-position:  15px -32px;
 }
 .form-content__icon--email{
-    background-position: 15px -67px;
+    background-position: 17px -65px;
 }
 .form-content__icon--localization{
-    background-position: 15px -100px;
+    background-position: 17px -100px;
+}
+.form-content__icon--phone{
+    background-position: 17px -133px;
 }
 .form-content__checkboxlabel{
     position: relative;
-    margin:5px auto;
+    margin:0 8px;
+    display: flex;
     flex:1;
-    width: 100%;
+    width: 95%;
     min-width: 10%;
     height: 40px;
-    display: flex;
     align-items: center;
 }
 .form-content__label{
-    padding: 5px;
+    padding: 10px;
 }
 .form-content__checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
     position: relative;  
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin: 1%;
     border: 1px solid #c6c6c6;
     border-radius: 3px;
@@ -154,20 +162,33 @@ p{
     position: absolute;
     width: 12px;
     height: 12px;
-    top:18%;
-    left: 18%;
+    top:23%;
+    left: 23%;
     border-radius: 3px;
     background: green;
 }
 
 .btn{
-    width: 100%;
+    width: 95%;
+    margin: 5px auto;
     height: 50px;
     background: rgb(154, 212, 52);
     border-radius: 3px;
     border: 1px solid rgb(59, 154, 0);
     color: white;
     font-weight: bold;
+}
+.btn--side-button{
+    width: 40%;
+    height: 40px;
+    margin: 0;  
+}
+.btn--remove{
+    background-color: rgb(245, 82, 99);
+    border-color: rgb(166, 45, 54)
+}
+.btn--self-confidence{
+    margin-left: auto;
 }
 :-webkit-autofill {
     -webkit-box-shadow: 0 0 0 100px rgba(244,244,244) inset;
@@ -179,4 +200,15 @@ p{
     background-color: rgb(244, 244, 244);
     padding: 5px;
     height: 14rem;
+}
+.form-content__one-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 8px;
+}
+
+.footer-container__bottom-Logo{
+    margin: 50px 10px;
+    opacity: 0.3;
+    color: blue;
 }
