@@ -169,23 +169,36 @@ p{
 }
 
 .btn{
+    cursor: pointer;
     width: 95%;
     margin: 5px auto;
     height: 50px;
-    background: rgb(154, 212, 52);
     border-radius: 3px;
+    background: rgb(154, 212, 52);
     border: 1px solid rgb(59, 154, 0);
     color: white;
     font-weight: bold;
+}
+.btn:hover{
+    background: rgb(125, 173, 42);
+    border: 1px solid rgb(46, 119, 0);
 }
 .btn--side-button{
     width: 40%;
     height: 40px;
     margin: 0;  
 }
+.btn:disabled{
+    background: rgb(157, 211, 63);
+    border: 1px solid rgb(69, 180, 0);
+}
 .btn--remove{
     background-color: rgb(245, 82, 99);
     border-color: rgb(166, 45, 54)
+}
+.btn--remove:hover{
+    background-color: rgb(179, 62, 73);
+    border-color: rgb(128, 33, 39)
 }
 .btn--self-confidence{
     margin-left: auto;
